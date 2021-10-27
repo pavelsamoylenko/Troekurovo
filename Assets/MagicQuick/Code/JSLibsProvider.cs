@@ -7,13 +7,7 @@ public class JSLibsProvider : MonoBehaviour
 {
     [DllImport("__Internal")]
     private static extern void TakeScreenshot();
-    
-    [DllImport("__Internal")]
-    private static extern void StartScreenRecording();
-    
-    [DllImport("__Internal")]
-    private static extern void StopScreenRecording();
-    
+
     [DllImport("__Internal")]
     private static extern void FireRecordButtonClicked();
 
@@ -30,15 +24,7 @@ public class JSLibsProvider : MonoBehaviour
         TakeScreenshot();
 		
     }
-
-    public void StartRecording()
-    {
-	    StartScreenRecording();
-    }
-    public void StopRecording()
-    {
-	    StopScreenRecording();
-    }
+    
 
     public void RecordButtonClicked()
     {
